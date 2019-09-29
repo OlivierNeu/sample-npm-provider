@@ -1,0 +1,11 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": false,
+			"web-context": "/npm-angular-provider"
+		}		
+	},
+	"dump-report": true,
+	"process-serially": true
+}
