@@ -3,7 +3,7 @@
 		"output-dir": "dist",
 		"features": {
 			"js-extender": false,
-			"web-context": "/npm-angular-provider"
+			"web-context": "/sample-npm-provider"
 		}		
 	},
 	"dump-report": true,
