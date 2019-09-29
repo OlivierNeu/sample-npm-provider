@@ -20,7 +20,9 @@
     "rxjs": "6.4.0",
     "zone.js": "0.8.29",
     "jquery": "3.3.1",
-    "pdfjs-dist": "2.2.228"
+    "pdfjs-dist": "2.2.228",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
   },
   "scripts": {
     "build": "npm run copy-assets && liferay-npm-bundler",
