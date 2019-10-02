@@ -1,4 +1,4 @@
-<table id="example" class="display" style="width:100%;">
+<table id="example" class="table table-striped table-hover dt-responsive dataTable dtr-inline collapsed order-column" cellspacing="0" width="100%" data-page-length='10'>
     <thead>
     <tr>
         <th>Name</th>
@@ -483,6 +483,18 @@
 
     Liferay.Loader.require('sample-npm-provider$datatables.net-bs4@1.10.19/js/dataTables.bootstrap4', (dt) => {
         let DataTable = dt(window, window.AUI.$);
-        window.AUI.$('#example').DataTable();
+
+        window.AUI.$('#example').DataTable( {
+            columnDefs: [ {
+                targets: [ 0 ],
+                orderData: [ 0, 1 ]
+            }, {
+                targets: [ 1 ],
+                orderData: [ 1, 0 ]
+            }, {
+                targets: [ 4 ],
+                orderData: [ 4, 0 ]
+            } ]
+        } );
     });
 </script>
