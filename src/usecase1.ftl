@@ -481,7 +481,8 @@
 
 <script>
 
-    Liferay.Loader.require('sample-npm-provider$datatables.net-bs4@1.10.19/js/dataTables.bootstrap4', (dt) => {
+    Liferay.Loader.require('sample-npm-provider$datatables.net-bs4@1.10.19/js/dataTables.bootstrap4',
+        "sample-npm-provider@1.0.0/external-css/datatables.net-bs4/dataTables.bootstrap4.css", (dt) => {
         let DataTable = dt(window, window.AUI.$);
 
         window.AUI.$('#example').DataTable( {
